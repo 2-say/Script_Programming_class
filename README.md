@@ -18,21 +18,25 @@ Koreatech Univ Script Programming
 
 ### 메인 과제
 
-> 문제
-
-Buet
-
-### 기능
-- 상단 애니메이션 배너
-- 최근 상품(DB 저장 기준) 대표 3가지만 전시 
-- 대학교 과 별 커뮤니티 선택 요소
-- IFrame 태그를 이용한 한국기술교육대학교 날씨와 학식 정보 
+> 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
 
 
-## 상품 View 페이지
+### 개요
+
+웹 파싱(Parshing)이란 어떤 페이지(문서, HTML 등)에서 내가 원하는 데이터를 특정 패턴이나 순서로 추출하여 정보로 가공하는 것을
+
+말합니다. 주로 웹 페이지 소스나, 문서 등에서 행해지며 주로 HTML tag, Xpath 등을 분석해 1차 적인 파싱(Parshing) 작업
+
+을 거치며 Python에서는 BeautifulSoup 모듈을 이용합니다. 조금 더 자세한 정보 수집이 필요할 때는 re 모듈을 사용해서 
+
+정규 표현식을 사용한 데이터 파싱을 진행합니다. 
+
+웹이나 다른 유저의 정보를 추출해 원하는 정보만 볼 수 있도록 제공하는 등 현재에 많이 사용되는 기술 중 하나 입니다.
 
 
-### 기능
+<img src="https://user-images.githubusercontent.com/91319157/208672941-97b9bb5a-75c8-49ec-a838-e7e7633527b8.png" width="200px">
+
+### 구현 방법
 - 카테고리 별 물품 조회 기능 
 ### DB Table
 | Num | category |  subject | content | name | regist_day | hit | id | price | file |
