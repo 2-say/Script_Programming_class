@@ -225,9 +225,9 @@ w1.searchUrlByWord("exitcard")
 
 <br><br><br><br><br><br><br><br><br>
 
-## 피드백
+## 피드백 🥊
 
-get을 통해서 html 데이터 값을 불러운 결과는 다음과 같습니다.
+get을 통해서 html 데이터 값을 불러 온 결과는 다음과 같습니다.
 <br>
 <img src="https://user-images.githubusercontent.com/91319157/208692524-ecbf7422-c811-4e39-b697-842cff10d3d7.png" width="50%">
 <br>
