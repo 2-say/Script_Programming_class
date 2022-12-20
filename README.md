@@ -160,7 +160,7 @@ while(True):   #영어 불용어 처리
 <br>
 <br>
 <br>
-<br><br><br><br><br>
+<br><br>
 
 - ### searchUrlByWord
 
