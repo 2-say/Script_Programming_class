@@ -1,5 +1,6 @@
 # Script_Programming_class
 Koreatech university Python class
+<br>
 <img src="https://user-images.githubusercontent.com/91319157/208688180-ba2c8567-a82b-4447-ac61-7a5ec218d03b.gif"  width="200px">
 
 ## 👋🏻 소개 
