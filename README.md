@@ -68,7 +68,6 @@ w1.removeUrl('http://www.cnn.com')
 <br>
 <br>
 <br>
-<br>
 
 - ### getWordsFrequency
 
@@ -87,7 +86,6 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
 
 <br>
 <br>
-<br>
 
 2. 긴 글 제거
 
@@ -97,7 +95,6 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
                 source_list.remove(i)                #주석처리 해제 하면 결과 출력 됩니다! 
 ```
 
-<br>
 <br>
 <br>
 <br>
@@ -111,7 +108,6 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
                 continue
 
 ```
-<br>
 <br>
 <br>
 <br>
@@ -136,7 +132,6 @@ while(True):   #영어 불용어 처리
             if j=='':
                 break
 ```
-<br>
 <br>
 <br>
 <br>
@@ -199,21 +194,28 @@ w1.searchUrlByWord("exitcard")
 ```
 
 
-<br><br><br><br><br>
+<br><br><br>
 
 > http://www.times.com 결과: 
 
 [('exitcard', 195), ('relatedlink', 124), ('New', 73), ('York', 66), ('data', 63), ('The', 55), ('relatedlinkimg', 54)]
+
 검색된 모든 단어의 갯수는 :  10946 개 입니다.
+
+<br>
 
 > https://www.amazon.com 결과:
 
 [('span', 2), ('endifdiv', 1), ('Enter', 1), ('characters', 1), ('Sorry', 1), ('robot', 1), ('For', 1)]
+
 검색된 모든 단어의 갯수는 :  36 개 입니다.
+
+<br>
 
 > https://github.com 결과:
 
 [('path', 44), ('span', 31), ('dinlineblock', 19), ('div', 11), ('source', 11), ('strokecurrentColor', 10), ('GitHub', 9)]
+
 검색된 모든 단어의 갯수는 :  1183 개 입니다.
 
 <br>
@@ -221,8 +223,7 @@ w1.searchUrlByWord("exitcard")
 가장 관련있는 사이트는 :  http://www.times.com
 
 
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
+<br><br><br><br><br><br><br><br><br><br>
 ## 피드백
 
 
