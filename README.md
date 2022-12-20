@@ -28,6 +28,11 @@ Koreatech Univ Script Programming
 
 # 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 💯
 
+파일: 
+- incremental Project/incremental.py 
+- stop_word/stop_words_english.txt
+- stop_word/stopwords-ko.txt
+
 <br>
 
 ### 개요
