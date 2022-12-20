@@ -62,9 +62,10 @@ w1.addUrl('https://github.com')
 w1.removeUrl('http://www.cnn.com')
 ```
 내장 함수: add, delete , getWordFrequency , getMaxFreqencyWords
-
-
-
+<br>
+<br>
+<br>
+<br>
 
 - getWordsFrequency
 
