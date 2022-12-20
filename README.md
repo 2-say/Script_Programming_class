@@ -185,7 +185,7 @@ http=""
 
 
 
-##결과 
+## 결과 
 
 입력 사이트:
 - http://www.times.com
