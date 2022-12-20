@@ -51,18 +51,85 @@ Koreatech Univ Script Programming
 
 ```
 
-이렇게 리스트로 구현했기 때문에 
+이렇게 리스트로 구현했기 때문에 삭제와 추가가 용이합니다. 
+
+```
+w1 = SearchEngine('https://cse.koreatech.ac.kr', 'http://www.cnn.com', 'https://www.koreatech.ac.kr/kor/Main.do')
+w1.addUrl('https://github.com')
+w1.removeUrl('http://www.cnn.com')
+```
+
+내장 함수: add, delete , getWordFrequency , getMaxFreqencyWords
+
+- getWordsFrequency
+
+이제 핵심 기능인 웹사이트 파싱을 구현할 함수입니다. 
+파이썬에서 제공해주는 re 모듈을 사용합니다. re 모듈은 정규화식을 이용해 문자열을 가공할 수 있도록 도와줍니다. 
+
+1. 태그값 제거
+<> 사이의 있는 값을 없애기 위해 다음과 같은 정규식을 사용하여 태그 값을 제거했습니다.
+
+```
+source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 사이 태그 문자 삭제 
+```
+그 외에도 특수문자, {}사이 문자를 제거하여 더욱 정확한 값을 추출할 수 있도록 제작했습니다. 
+
+2. 긴 글 제거
+
+```
+     for i in source_list:
+            if(len(i)>20):               #띄어쓰기가 안된 엄청 긴 단어들은 표현 x 
+                source_list.remove(i)                #주석처리 해제 하면 결과 출력 됩니다! 
+```
 
 
+3. 영어 숫자 섞인 단어 제거 (ex : zw1321d)
+```
+  for s in source_list:                   #영어와 숫자가 혼합된 단어 삭제 (예를 들면 zfq412afn 같은 )
+            if s.isalpha() or s.isdigit():
+                source_list1.append(s)  
+            else:
+                continue
+
+```
 
 
+4. 불용어 제거
+
+추출을 진행하니 알 수 없는 단어만 추출되었습니다. (ex. fdq) 
+더욱 정확한 단어만 추출하기 위해서 불용어를 제거하는 부분을 추가했습니다. 
+
+불용어 리스트를 Text파일로 저장해 해당 값을 불러와 나의 source (즉, 위에서 가공된 단어들) 
+
+에 존재한다면 삭제! 과정을 진행했습니다.
 
 
+```
+while(True):   #영어 불용어 처리 
 
+            j = stop_word.readline()
+            j = j.strip('\n')
+            if(j in wordCount):
+                del(wordCount[j])  #해당되는 단어 삭제
+            if j=='':
+                break
+```
 
+5. 사용자 불용어 처리 
 
+이렇게 제거하더라도 웹페이지별로 쓰래기값이 분류되어 저장되는 현상이 발생했습니다. 
 
+<img src="https://user-images.githubusercontent.com/91319157/208681422-70f10dac-05dc-478e-9f30-a9dadaebdf34.png" width="80%">
 
+그래서 사용자 수동적으로 입력 받아 불용어를 처리할 수 있는 기능을 추가했습니다. 
+
+```
+ stopword_input=str(input(html + "의 불용어를 입력해주세요 (없을 시 -1 입력): "))                      #사용자 불용어 처리 
+        while(stopword_input != str(-1)):                #-1이 입력될때 까지 삭제 
+            stopword_input=str(input())
+            if(stopword_input in wordCount):
+                del(wordCount[stopword_input])
+```
 
 
 
