@@ -36,19 +36,20 @@ Koreatech Univ Script Programming
 웹이나 다른 유저의 정보를 추출해 원하는 정보만 볼 수 있도록 제공하는 등 현재에 많이 사용되는 기술 중 하나 입니다.
 
 
-<img src="https://user-images.githubusercontent.com/91319157/208672941-97b9bb5a-75c8-49ec-a838-e7e7633527b8.png" width="200px">
+<img src="https://user-images.githubusercontent.com/91319157/208672941-97b9bb5a-75c8-49ec-a838-e7e7633527b8.png" width="300px">
 <br>
 
 ### 구현 방법
 - SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
 
 '''
-  class SearchEngine:
-    
+
+  class SearchEngine:  
     def __init__(self,*args):     #생성자 부분 
         self.html_list = [] 
         for i in args:
             self.html_list.append(i)  #html 주소를 모두 list에 저장 
+
 '''
 
 내부함수로 주소 추가, 주소 삭제를 구현했다.
