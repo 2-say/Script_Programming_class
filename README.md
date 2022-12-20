@@ -66,6 +66,7 @@ w1.removeUrl('http://www.cnn.com')
 <br>
 <br>
 <br>
+<br>
 
 - ### getWordsFrequency
 
@@ -73,7 +74,7 @@ w1.removeUrl('http://www.cnn.com')
 
 이제 핵심 기능인 웹사이트 파싱을 구현할 함수입니다. 
 파이썬에서 제공해주는 re 모듈을 사용합니다. re 모듈은 정규화식을 이용해 문자열을 가공할 수 있도록 도와줍니다. 
-
+<br>
 1. 태그값 제거
 <> 사이의 있는 값을 없애기 위해 다음과 같은 정규식을 사용하여 태그 값을 제거했습니다.
 
@@ -81,7 +82,7 @@ w1.removeUrl('http://www.cnn.com')
 source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 사이 태그 문자 삭제 
 ```
 그 외에도 특수문자, {}사이 문자를 제거하여 더욱 정확한 값을 추출할 수 있도록 제작했습니다. 
-
+<br>
 2. 긴 글 제거
 
 ```
@@ -90,6 +91,7 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
                 source_list.remove(i)                #주석처리 해제 하면 결과 출력 됩니다! 
 ```
 
+<br>
 
 3. 영어 숫자 섞인 단어 제거 (ex : zw1321d)
 ```
@@ -100,7 +102,7 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
                 continue
 
 ```
-
+<br>
 
 4. 불용어 제거
 
@@ -122,6 +124,8 @@ while(True):   #영어 불용어 처리
             if j=='':
                 break
 ```
+<br>
+<br>
 
 5. 사용자 불용어 처리 
 
