@@ -40,8 +40,8 @@ Koreatech Univ Script Programming
 <img src="https://user-images.githubusercontent.com/91319157/208672941-97b9bb5a-75c8-49ec-a838-e7e7633527b8.png" width="300px">
 <br>
 
-### 구현 방법
-- SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
+## 구현 방법
+- ### SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
 
 ***
 
@@ -67,7 +67,7 @@ w1.removeUrl('http://www.cnn.com')
 <br>
 <br>
 
-- getWordsFrequency
+- ### getWordsFrequency
 
 ***
 
