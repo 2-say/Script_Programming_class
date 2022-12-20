@@ -16,7 +16,6 @@ Koreatech Univ Script Programming
 - 2021.09.02~2021.12.10
 
 
-### 메인 과제
 
 # 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
 
