@@ -2,12 +2,15 @@
 Koreatech university Python class
 <br>
 <img src="https://user-images.githubusercontent.com/91319157/208688180-ba2c8567-a82b-4447-ac61-7a5ec218d03b.gif"  width="50px">
+<br>
 
 ## 👋🏻 소개 
 Koreatech Univ Script Programming
 수업에서 내주셨던 과제와 공부 과정 & 해결 답안을 작성하여 올린 파일 입니다. 
 
 거기에서 대표 문제 (과제5 [Incremental project] )만 소개
+
+<br>
 
 ### 💻 환경 
 - `Python`
@@ -20,11 +23,10 @@ Koreatech Univ Script Programming
 - 2021.09.02~2021.12.10
 
 <br>
-<br>
 
 # 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 💯
 
-
+<br>
 
 ### 개요
 
