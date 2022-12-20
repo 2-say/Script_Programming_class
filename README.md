@@ -16,7 +16,8 @@ Koreatech Univ Script Programming
 
 - 2021.09.02~2021.12.10
 
-
+<br>
+<br>
 
 # 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
 
@@ -36,46 +37,33 @@ Koreatech Univ Script Programming
 
 
 <img src="https://user-images.githubusercontent.com/91319157/208672941-97b9bb5a-75c8-49ec-a838-e7e7633527b8.png" width="200px">
+<br>
 
 ### 구현 방법
-- 카테고리 별 물품 조회 기능 
-### DB Table
-| Num | category |  subject | content | name | regist_day | hit | id | price | file |
-| :---:  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
-| PK  |  상품 카테고리 | 제목 | 판매글 | 이름 | 등록날짜 | 조회수 | 닉네임 | 가격 | 파일정보 | 
+- SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
 
-데이터베이스에 저장된 카테고리를 이용해 각각의 조회 페이지를 만들어 SQL을 다르게 하여 조회하였다. 
+'''
+  class SearchEngine:
+    
+    def __init__(self,*args):     #생성자 부분 
+        self.html_list = [] 
+        for i in args:
+            self.html_list.append(i)  #html 주소를 모두 list에 저장 
+'''
 
-- 수정 (DB sql) 
-- 삭제 (DB sql) 
-- 글 작성 (DB sql)
-
-> 각각 php에서 세션을 통해서 값을 전달하여 전달받은 데이터를 DB sql문을 통해서 저장
-
+내부함수로 주소 추가, 주소 삭제를 구현했다.
 
 
 
-## 개발자 페이지 
-
-if문을 통해서 저장된 맴버 admin으로 접속 시 숨겨진(hidden) 관리자 모드 제공
-
-### 기능
-- 배너 수정 & 삭제
-- 회원 관리(탈퇴 = 삭제) 
-- 모든 게시글 삭제 권한
 
 
-## 그외
 
-- javascript를 이용한 로그인 확인 검사 (로그인 후 글쓰기) 
-- 게시글 작성 후 포인트 부여 ( 회원 마다 포인트 DB +100) 
-- 상품 개수 9개 이상 페이지 다음 이전 버튼 
-- 쪽지 송신 수신 기능 
-<br>
-<br>
-<br>
-<br>
-<br>
+
+
+
+
+
+
 
 
 
