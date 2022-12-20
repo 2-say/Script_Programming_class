@@ -294,7 +294,7 @@ get을 통해서 html 데이터 값을 불러 온 결과는 다음과 같습니�
 작고 소박한 나의 삐걱거리는 과제였습니다. 
 
 
-<br><br><br><br>
+<br>
 <img src ="https://user-images.githubusercontent.com/91319157/208697708-98934f91-4cbc-4eb0-9578-13e84cb8ac84.jpg" width="20%">
 
 
