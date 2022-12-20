@@ -18,7 +18,9 @@ Koreatech Univ Script Programming
 
 ### 메인 과제
 
-> 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
+# 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
+
+***
 
 
 ### 개요
