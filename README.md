@@ -1,5 +1,6 @@
 # Script_Programming_class
 Koreatech university Python class
+<img src="https://user-images.githubusercontent.com/91319157/208688180-ba2c8567-a82b-4447-ac61-7a5ec218d03b.gif" width="40%">
 
 ## 👋🏻 소개 
 Koreatech Univ Script Programming
@@ -20,7 +21,7 @@ Koreatech Univ Script Programming
 <br>
 <br>
 
-# 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 
+# 문제: 웹 파싱해 보기 (BeautifulSoup 사용 금지) 💯
 
 
 
@@ -61,7 +62,7 @@ w1 = SearchEngine('https://cse.koreatech.ac.kr', 'http://www.cnn.com', 'https://
 w1.addUrl('https://github.com')
 w1.removeUrl('http://www.cnn.com')
 ```
-내장 함수: add, delete , getWordFrequency , getMaxFreqencyWords
+내장 함수: add, delete , getWordFrequency , getMaxFreqencyWords , searchUrlByWord
 <br>
 <br>
 <br>
@@ -103,7 +104,7 @@ source =  re.sub(r'(?s)\<.*?\>[^\w\s]*', '', source).replace('\n', '')    # < > 
 3. 영어 숫자 섞인 단어 제거 (ex : zw1321d)
 ```
   for s in source_list:                   #영어와 숫자가 혼합된 단어 삭제 (예를 들면 zfq412afn 같은 )
-            if s.isalpha() or s.isdigit():
+            if s.isalpha() :
                 source_list1.append(s)  
             else:
                 continue
@@ -157,6 +158,66 @@ while(True):   #영어 불용어 처리
 ```
 
 
+- searchUrlByWord
+
+사용자가 입력한 값이 어떤 사이트에서 나타나는 지 확인하는 함수입니다. 
+해당 단어가 여러 사이트에서 발견되었을 경우 빈도수가 높은 사이트를 결과로 반환합니다.
+
+```
+http=""
+        max_num = 0
+        a={}
+        for i in self.html_list:
+            a =  self.getWordsFrequency(i)           #word(keyword)와 관련된 단어를 찾는다. 
+            if a.get(word) is not None:              #만약 키워드가 있다면 
+                if  max_num < a.get(word) :          #여기서 사이트중 가장 빈도가 높은것을 가려낸다. 
+                        max_num = a.get(word) 
+                        http  = i
+```
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+##결과 
+
+입력 사이트:
+- http://www.times.com
+- https://www.amazon.com
+- https://github.com
+
+```
+w1 = SearchEngine('http://www.github.com', 'http://www.times.com', 'https://www.amazon.com')
+w1.getMaxFreqencyWords()
+w1.searchUrlByWord("exitcard")
+```
+
+
+<br><br><br><br><br>
+
+> http://www.times.com 결과: 
+
+[('exitcard', 195), ('relatedlink', 124), ('New', 73), ('York', 66), ('data', 63), ('The', 55), ('relatedlinkimg', 54)]
+검색된 모든 단어의 갯수는 :  10946 개 입니다.
+
+> https://www.amazon.com 결과:
+
+[('span', 2), ('endifdiv', 1), ('Enter', 1), ('characters', 1), ('Sorry', 1), ('robot', 1), ('For', 1)]
+검색된 모든 단어의 갯수는 :  36 개 입니다.
+
+> https://github.com 결과:
+
+[('path', 44), ('span', 31), ('dinlineblock', 19), ('div', 11), ('source', 11), ('strokecurrentColor', 10), ('GitHub', 9)]
+검색된 모든 단어의 갯수는 :  1183 개 입니다.
+
+<br>
+해당단어  exitcard 
+가장 관련있는 사이트는 :  http://www.times.com
+
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+## 피드백
 
 
 
