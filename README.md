@@ -42,6 +42,8 @@ Koreatech Univ Script Programming
 
 ### 구현 방법
 - SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
+- 
+***
 
 ```
   class SearchEngine:  
@@ -59,10 +61,14 @@ w1 = SearchEngine('https://cse.koreatech.ac.kr', 'http://www.cnn.com', 'https://
 w1.addUrl('https://github.com')
 w1.removeUrl('http://www.cnn.com')
 ```
-
 내장 함수: add, delete , getWordFrequency , getMaxFreqencyWords
 
+
+
+
 - getWordsFrequency
+
+***
 
 이제 핵심 기능인 웹사이트 파싱을 구현할 함수입니다. 
 파이썬에서 제공해주는 re 모듈을 사용합니다. re 모듈은 정규화식을 이용해 문자열을 가공할 수 있도록 도와줍니다. 
