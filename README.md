@@ -42,7 +42,7 @@ Koreatech Univ Script Programming
 
 ### 구현 방법
 - SearchEngine class : 사이트에 주소를 리스트 형태로 저장하고 관리하는 Class
-- 
+
 ***
 
 ```
