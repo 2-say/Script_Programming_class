@@ -7,6 +7,7 @@ Koreatech university Python class
 ## 👋🏻 소개 
 Koreatech Univ Script Programming
 수업에서 내주셨던 과제와 공부 과정 & 해결 답안을 작성하여 올린 파일 입니다. 
+
 GPT가 없던 시절 직접 제작한 코드 입니다.
 
 
